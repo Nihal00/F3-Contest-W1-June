@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./icon/favicon.ico" type="image/x-icon">
+    <title>Employees Data</title>
+</head>
+<body>
+
+    <!------------- GET input section -------------->
+    <section class="input-section">
+        <h1 class="title">New Employees</h1>
+
+        <form class="input-container" method="post">
+            
+            <div class="input-details">
+                <label for="name" class="input-labels">Enter Name</label>
+                <input type="text" id="name" class="name inputs" required>
+            </div>
+
+            <div class="input-details">
+                <label for="profession"  class="input-labels">Enter Profession</label>
+                <input type="text" id="profession" class="profession inputs" required>
+            </div>
+
+            <div class="input-details">
+                <label for="age"  class="input-labels">Enter Age</label>
+                <input type="number" min="1" max="" id="age" class="age inputs" required>
+            </div>
+        </form>
+
+        <button type="submit" class="add-user">Add User</button>
+    </section>
+
+
+    <!------------- Input display section -------------->
+    <section class="display-section">
+        <p class="error">Error: Please Make Sure All the fields are filled before in an employee!</p>
+        <p class="success">Success: Employee Added!</p>
+        
+        <h3 class="emp">Added Employees</h3>
+
+        <div class="emp-status">You have 0 Employees.</div>
+
+        <div class="display-input">
+
+            <!-- Displaying all employees details -->
+            <!-- <div class="display-container">
+                <ul class="input-info">
+                    <li>1.</li>
+                    <li>Name: Jack</li>
+                    <li>Profession: Developer</li>
+                    <li>Age: 20</li>
+                </ul>
+                <button type="submit" class="delete-user">Delete User</button>
+            </div>
+
+            <div class="display-container">
+                <ul class="input-info">
+                    <li>1.</li>
+                    <li>Name: John</li>
+                    <li>Profession: Developer</li>
+                    <li>Age: 28</li>
+                </ul>
+                <button type="submit" class="delete-user">Delete User</button>
+            </div> -->
+        </div>
+    </section>
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
